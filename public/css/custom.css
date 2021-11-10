@@ -1,0 +1,134 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        
+         :root {
+            /* Fonts */
+            --body-font: 'Poppins', sans-serif;
+            --title-font: 'Ubuntu', sans-serif;
+            --navbar-font: 'Roboto Slab', serif;
+            /* Fonts End */
+            /* Color */
+            --font-color: #141823;
+            --title-color: #182C61;
+            --bg-color: #2d98da;
+            --button-color: #2c2c54;
+            /* Color End */
+        }
+        
+        .ar-button {
+            padding: 6px 30px;
+            border: 1px solid var(--button-color);
+            border-radius: 20px;
+            background-color: transparent;
+            color: var(--font-color);
+            transition: 0.3s all ease;
+        }
+        
+        .ar-button-fill {
+            padding: 6px 30px;
+            border: 1px solid var(--button-color);
+            border-radius: 20px;
+            background-color: var(--button-color);
+            color: white;
+            transition: 0.3s all ease;
+        }
+        
+        .ar-button:hover {
+            background-color: var(--button-color);
+            color: white;
+        }
+        /* 1. Navbar */
+        
+        .navbar_wrapper {
+            -webkit-transition: all .2s linear;
+            -o-webkit-transition: all .2s linear;
+            -moz-webkit-transition: all .2s linear;
+            -ms-webkit-transition: all .2s linear;
+            transition: all .2s linear;
+        }
+        
+        .navbar_wrapper .navbar-brand img {
+            max-width: 250px;
+            height: auto;
+        }
+        
+        .navbar_wrapper .menu-navbar-nav {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .navbar_wrapper .nav-item {
+            margin: 0 10px;
+        }
+        
+        .navbar_wrapper .nav-item .nav-link {
+            font-weight: bolder;
+            font-size: 14px;
+            color: var(--font-color);
+            font-family: var(--navbar-font);
+            line-height: 1;
+            letter-spacing: 2px;
+        }
+        
+        .navbar_wrapper .navbar-nav .nav-link.active {
+            padding: 6px 30px;
+            border: 1px solid var(--button-color);
+            border-radius: 20px;
+            background-color: var(--button-color);
+            color: white;
+            transition: 0.3s all ease;
+        }
+        
+        .navbar_wrapper .nav-item :not(.active):hover {
+            opacity: 0.5;
+        }
+        
+        .header-scrolled {
+            position: fixed;
+            margin-top: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 85px;
+            background-color: white;
+            -webkit-box-shadow: 0 2px 10px 0 rgba(12, 0, 46, 0.5);
+            box-shadow: 0 2px 10px 0 rgba(12, 0, 46, 0.5);
+        }
+        
+        .header-scrolled .navbar-brand img {
+            width: 150px;
+            height: auto;
+            animation: animated 0.5s ease-in-out;
+        }
+        
+        @keyframes animated {
+            0% {
+                width: 150px;
+            }
+            50% {
+                width: 160px;
+            }
+            100% {
+                width: 150px;
+            }
+        }
+        
+        .header-scrolled .nav-item .nav-link {
+            font-size: 12px;
+        }
+        /* 2.Banner */
+        
+        .banner_wrapper {
+            width: 100%;
+            display: flex;
+            padding: 100px 0px;
+            justify-content: center;
+            align-items: center;
+        }
