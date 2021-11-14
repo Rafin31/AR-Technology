@@ -21,7 +21,7 @@
                     <a class="nav-link" href="#catagories">Catagories</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#populer_item">Populer Item</a>
+                    <a class="nav-link" href="#Featured_item">Featured Item</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#offers">Offers</a>
@@ -37,10 +37,10 @@
                 </li>
             </ul>
             <ul class="navbar-nav">
-                <li class="nav-item text-center">
+                <li class="nav-item button_ text-center">
                     <button class="ar-button">Sign in</button>
                 </li>
-                <li class="nav-item text-center">
+                <li class="nav-item button_ text-center">
                     <button class="ar-button-fill">Sign up</button>
                 </li>
             </ul>

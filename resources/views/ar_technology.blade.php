@@ -15,7 +15,12 @@
 @include('layouts.Navbar.navbar')
 {{-- 2.Banner --}}
 @include('layouts.Banner.banner')
-
+{{-- 4.Notice --}}
+@include('layouts.Notice.notice')
+{{-- 3.Catagories --}}
+@include('layouts.Catagories.catagories')
+{{-- 4.Featured Item --}}
+@include('layouts.Featured-Product.featured_product')
 
 
 

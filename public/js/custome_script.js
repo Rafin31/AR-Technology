@@ -7,3 +7,15 @@ window.onscroll = function() {
         nav.classList.remove("header-scrolled")
     }
 }
+
+
+let nav_bar = document.querySelectorAll('.nav-link');
+let collaps = document.querySelector('.navbar-collapse.collapse');
+
+
+nav_bar.forEach((a) => {
+    a.addEventListener("click", () => {
+        collaps.classList.remove("show");
+    })
+
+})
