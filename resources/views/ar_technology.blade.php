@@ -21,6 +21,10 @@
 @include('layouts.Catagories.catagories')
 {{-- 4.Featured Item --}}
 @include('layouts.Featured-Product.featured_product')
+{{-- 5.About --}}
+@include('layouts.About.about')
+{{-- 6.Footer --}}
+@include('layouts.Footer.footer')
 
 
 

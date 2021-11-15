@@ -12,8 +12,7 @@
 
         <div class=" card box col-5 col-lg-2 col-md-2 ">
 
-            <img class="img-fluid text-center card-img-top" src="{{asset('Assets/Features_Product/1.jpg')}}" alt=""
-                srcset="">
+            <img class="img-fluid text-center na" src="{{asset('Assets/Features_Product/1.jpg')}}" alt="" srcset="">
 
             <div class="card-body ">
                 <p>Deli 4116 Fingerprint & Digital Safe Box / Locker / Vault</p>
@@ -166,3 +165,4 @@
 
 
     </div>
+</div>
