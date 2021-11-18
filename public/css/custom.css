@@ -28,6 +28,25 @@
             --title-font-size: 35px;
         }
         
+        .form-input {
+            width: 100%;
+            padding: 5px 5px;
+            border-radius: 5px;
+            border: 0;
+        }
+        
+        .form-input-borderd {
+            width: 100%;
+            padding: 5px 5px;
+            border-radius: 5px;
+            border: 1px solid var(--font-color);
+        }
+        
+        .form-input:focus,
+        .form-input-borderd:focus {
+            outline: none;
+        }
+        
         .ar-button {
             padding: 6px 30px;
             border: 1px solid var(--button-color);
@@ -44,6 +63,19 @@
             background-color: transparent;
             color: var(--font-color);
             transition: 0.3s all ease;
+        }
+        
+        .ar-button-flat-fill {
+            padding: 6px 30px;
+            border: 1px solid var(--button-color);
+            border-radius: 5px;
+            background-color: var(--button-color);
+            color: white;
+            transition: 0.3s all ease;
+        }
+        
+        .ar-button-flat-fill:hover {
+            opacity: 0.6;
         }
         
         .ar-button-fill {
@@ -149,6 +181,10 @@
         .header-scrolled .nav-item .nav-link {
             font-size: 12px;
         }
+        
+        .modal .modal-body .login input {
+            margin-bottom: 15px;
+        }
         /* 2.Banner */
         
         .banner_wrapper {
@@ -224,17 +260,6 @@
             font-family: var(--title-font);
             color: var(--title-color);
             font-weight: bold !important;
-        }
-        
-        .banner_wrapper .banner-bottom .box-wrapper .form-input input {
-            width: 100%;
-            padding: 5px 5px;
-            border-radius: 5px;
-            border: 0;
-        }
-        
-        .banner_wrapper .banner-bottom .box-wrapper .form-input input:focus {
-            outline: none;
         }
         
         .banner_wrapper .banner-bottom .box-wrapper .search_button button {

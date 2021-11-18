@@ -37,9 +37,7 @@
                     <div class="title">
                         <p class=" text-center font-weight-bold">Search Product</p>
                     </div>
-                    <div class="form-input">
-                        <input type="text" placeholder="Search Product">
-                    </div>
+                    <input type="text" class="form-input" placeholder="Search Product">
                     <div class="search_button">
                         <button class="ar-button-flat">Search</button>
                     </div>

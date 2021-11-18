@@ -38,7 +38,7 @@ return [
     | application. If disabled, a simple generic error page is shown.
     |
     */
-    'key' => env('APP_KEY', 'base64:EEoHpzIan1R8UgXDP0NxvNqCx42SKzdmP4JQF+LpPQg='),
+
     'debug' => (bool) env('APP_DEBUG', true),
 
     /*

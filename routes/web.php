@@ -25,3 +25,12 @@ Route::get('/ar-technology', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+//Social login
+Route::get('/signup/github', "Auth\RegisterController@redirectToProvide")->name("auth.github");
+
+Route::get('/signup/google', "Auth\RegisterController@redirectToProvide")->name("auth.google");
+Route::get('/login/google/callback', "Auth\RegisterController@handleProviderCallback");
+
+// http://localhost:8000/login/google/callback

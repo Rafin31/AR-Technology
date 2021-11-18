@@ -6,8 +6,12 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Laravel\Socialite\Facades\Socialite;
+use Illuminate\Support\Str;
+
 
 class RegisterController extends Controller
 {
@@ -69,5 +73,23 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+    }
+    public function redirectToProvide()
+    {
+        return Socialite::driver('google')->redirect();
+    }
+    public function handleProviderCallback()
+    {
+        $user = Socialite::driver('google')->user();
+
+        $newUser = User::create([
+            'name' => $user['name'],
+            'email' => $user['email'],
+            'password' => Hash::make(STR::random(8)),
+        ]);
+
+        Auth::login($newUser, true);
+
+        return redirect('/');
     }
 }
